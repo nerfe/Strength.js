@@ -32,7 +32,5 @@ ngStrengthjs
 ```
 # Usage
 ```html
-
-<div ng-model="vm.country" country-select></div>
-<div country="{{ vm.country }}" ng-model="vm.state" state-select></div>
+<input id="myPassword" type="password" name="" value="" strengthjs="strengthjsOptions">
 ```
