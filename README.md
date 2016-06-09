@@ -101,3 +101,38 @@ If you want to initiate the plugin with options then you can do so like:
 
 							</tbody>
 						</table>
+
+# ngstrengthjs
+Added Angular support by <a href="https://github.com/nerfe">nerfe</a>
+
+# How to install
+Install using bower:
+
+bower install ngstrengthjs --save<br><br>
+
+Add to your app.js:
+
+ngStrengthjs
+
+# Add to your controller
+```html
+        $scope.strengthjsOptions = {
+                strengthClass: 'strength',
+                strengthMeterClass: 'strength_meter',
+                strengthButtonClass: 'button_strength',
+                strengthButtonText: 'Show Password',
+                strengthButtonTextToggle: 'Hide Password'
+            };
+
+```
+
+# Add libraries
+```html
+<script type="text/javascript" src="bower_components/pass-strength/strength.js"></script>
+<script type="text/javascript" src="bower_components/ngstrengthjs/dist/ngstrengthjs.js"></script>
+```
+# Usage
+```html
+<input id="myPassword" type="password" name="" value="" strengthjs="strengthjsOptions">
+```
+
